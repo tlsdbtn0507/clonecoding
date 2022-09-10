@@ -21,10 +21,12 @@ function paintTodo(newTodo){
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo.text;
+    const b = document.createElement("b")
+    b.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText="x";
+    button.innerText="Delete";
     button.addEventListener("click",deleteTodo);
+    li.appendChild(b)
     li.appendChild(span);
     li.appendChild(button);
     todoList.appendChild(li);
@@ -55,4 +57,5 @@ if(savedTodos != null){
     toDos = parsedTodos;
     parsedTodos.forEach(paintTodo)
 }
+
 
