@@ -15,10 +15,10 @@ input[type="text1"]{
     border-bottom: 1px solid white;
     background: inherit;
 }
-input[type="text1"]:hover{
-    background: white;
-    
+input::placeholder{
+    color: white;
 }
+
 /* 로그인 버튼*/
 input[value="Log In"]{
     background: inherit;
@@ -62,9 +62,6 @@ input[type="text2"]{
     border-bottom: 1px solid white;
 }
 /* Todo List 버튼 호버 */
-input[type="text2"]:hover{
-    background: white;
-}
 ::marker{
     font-size: 40px;
 }
