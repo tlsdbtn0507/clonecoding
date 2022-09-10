@@ -1,19 +1,23 @@
 .hidden{
     display: none;
 }
-/* 로그인 투두리스트 폼 */
-form{
-    margin: 50px;
+
+form,div{
     text-align: center;
+    box-sizing: content-box;
 }
 /* 로그인 입력창 */
 input[type="text1"]{
-border: none;
-color:white;
-  width: 350px;
-  font-size: 40px;
-  border-bottom: 2px solid white;
-  background: inherit;
+    border: none;
+    /* color:white; */
+    width: 350px;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    background: inherit;
+}
+input[type="text1"]:hover{
+    background: white;
+    
 }
 /* 로그인 버튼*/
 input[value="Log In"]{
@@ -21,6 +25,10 @@ input[value="Log In"]{
     color:white;
     border: none;
     font-size: 40px;
+}
+input[value="Log In"]:hover{
+    background: white;
+    color: black
 }
 /* 헬로우 부분 */
 #greeting{
@@ -37,6 +45,50 @@ input[value="Log In"]{
     display: block;
     font-size: 100px;
     opacity: 0.5;
+}
+
+/* Todo List 입력창 */
+input[type="text2"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: none;
+    padding-top: 0px;
+    font-size: 40px;
+    width: 510px;
+    background: inherit;
+    padding-bottom: 10px solid white ;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+/* Todo List 버튼 호버 */
+input[type="text2"]:hover{
+    background: white;
+}
+::marker{
+    font-size: 40px;
+}
+ol{
+    margin: auto;
+    border: 10px ;
+    opacity: 0.5;
+    /* list-style-position:inside; */
+    max-width: fit-content;
+    background-color: white;
+}
+b{
+    background-color: white;
+    color: black;
+    width: fit-content;
+}
+
+li,button{
+    background: inherit;
+    border: none;
+    font-size: 30px;
+}
+button:hover{
+    background:silver;
 }
 /* 배경이미지 */
 .bgImg{
