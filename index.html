@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momentum</title>
-    <link rel="stylesheet" href="css/style.css">    
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Momentum</title>
+        <link rel="stylesheet" href="css/style.css">    
+    </head>
+    <body>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
     <h2 id="clock">00:00:00</h2>
         <form class="hidden" id="login-form">
             <input 
@@ -18,19 +22,15 @@
             <input type="submit" value="Log In">
         </form>
         <h1  class="hidden" id="greeting"></h1>
-        <div id="todo-form">
+        <form id="todo-form">
             <input type="text2" placeholder="Write a To do and Press Enter" requierd/>
             <ol id="todo-list">
             </ol>
-        </div>
+        </form>
         
-        <div id="quote">
-            <span></span>
-            <span></span>
-        </div>
         <div id="weather">
             <span></span>
-            <span></span>
+            <p></p>
     </div>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
