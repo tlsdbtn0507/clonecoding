@@ -1,5 +1,5 @@
 const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
+const city = document.querySelector("#weather p");
 const APY_KEY ="58e0f74a42da866b5f3ae783d2d5ba3d";
 
 function onGeoOk(position){
@@ -9,8 +9,8 @@ function onGeoOk(position){
     fetch(url)
     .then((response)=>response.json())
     .then((data)=>{
-        city.innerText = data.name;
-        weather.innerText = `${data.weather[0].main}/${data.main.temp}`;
+        city.innerText = `Now you are in ${data.name}`;
+        weather.innerText = `Today's Weather:${data.weather[0].main}/${data.main.temp}`;
     });
 }
 function onGeoErro(){
